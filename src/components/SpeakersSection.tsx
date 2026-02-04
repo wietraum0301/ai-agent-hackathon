@@ -1,4 +1,5 @@
 import { Github, Linkedin } from "lucide-react";
+import boraLeeImage from "@/assets/speaker-bora-lee.jpg";
 
 const speakers = [
   {
@@ -17,7 +18,7 @@ const speakers = [
     role: "Microsoft MVP · 퍼실리테이터",
     description: "전체 워크숍 퍼실리테이션, OpenCode + Azure AI Foundry 실습 리드",
     tags: ["Microsoft MVP", "모던웹연구소", "AI Workshop"],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
+    image: boraLeeImage,
     social: {
       github: "https://github.com",
       linkedin: "https://linkedin.com",
