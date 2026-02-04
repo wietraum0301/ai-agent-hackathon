@@ -7,20 +7,20 @@ const days = [
     id: "day1",
     label: "Day 1",
     title: "인사이트 & 아이데이션",
-    date: "12월 29일 (월)",
+    date: "3월 27일 (금)",
     sessions: [
       { time: "13:00 - 13:30", title: "등록 & 네트워킹", description: "참가사 소개, IT/디지털 과제 공유", icon: Users },
       { time: "13:30 - 14:00", title: "키노트 ① AI 에이전트 시대", description: "비즈니스 리더에게 필요한 관점, 글로벌 도입 사례", icon: Lightbulb },
       { time: "14:00 - 14:40", title: "키노트 ② GitHub Copilot & Azure AI Foundry", description: "엔터프라이즈 개발 환경, 보안/거버넌스 개요", icon: Presentation },
       { time: "14:40 - 16:10", title: "라이브 시연 & 바이브코딩", description: "비즈니스 요구사항 → 기능 정의 → 코드/테스트/문서 생성", icon: Code, highlight: true },
-      { time: "16:20 - 18:00", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI 에이전트 Use Case 정의 및 프로토타입 범위 설정", icon: Rocket },
+      { time: "16:20 - 18:00", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS 및 에이전트 Use Case 정의 및 프로토타입 범위 설정", icon: Rocket },
     ],
   },
   {
     id: "day2",
     label: "Day 2",
     title: "해커톤 & 데모데이",
-    date: "12월 30일 (화)",
+    date: "3월 28일 (토)",
     sessions: [
       { time: "09:00 - 09:20", title: "리캡 & Day 2 목표 공유", description: "전날 Use Case 재정리, 완성 수준 합의", icon: Users },
       { time: "09:20 - 10:20", title: "통합 기술 세션", description: "OpenCode + Azure AI Foundry + Copilot 연계 전략", icon: Code, highlight: true },
@@ -39,7 +39,7 @@ const AgendaSection = () => {
   const currentDay = days.find((d) => d.id === activeDay)!;
 
   return (
-    <section className="py-24 relative overflow-hidden bg-background">
+    <section id="agenda" className="py-24 relative overflow-hidden bg-background">
       {/* Background */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
@@ -47,11 +47,11 @@ const AgendaSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">AGENDA</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
             2일간의 여정
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            인사이트에서 프로토타입까지, 완전한 AI 에이전트 개발 경험
+          <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
+            인사이트에서 프로토타입까지, 완전한 AI SaaS 개발 경험
           </p>
         </div>
 
@@ -96,37 +96,18 @@ const AgendaSection = () => {
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Timeline Dot */}
-                    <div
-                      className={cn(
-                        "absolute left-4 w-8 h-8 rounded-lg flex items-center justify-center transition-all",
-                        session.highlight
-                          ? "bg-gradient-primary shadow-md glow-primary"
-                          : "bg-muted border border-border"
-                      )}
-                    >
-                      <Icon className={cn("w-4 h-4", session.highlight ? "text-primary-foreground" : "text-muted-foreground")} />
+                    <div className="absolute left-4 w-8 h-8 rounded-lg flex items-center justify-center transition-all bg-muted border border-border">
+                      <Icon className="w-4 h-4 text-muted-foreground" />
                     </div>
 
                     {/* Content Card */}
-                    <div
-                      className={cn(
-                        "p-5 rounded-xl border transition-all duration-300 hover:shadow-md",
-                        session.highlight
-                          ? "bg-accent/10 border-primary/30"
-                          : "bg-background border-border hover:border-primary/20"
-                      )}
-                    >
+                    <div className="p-5 rounded-xl border transition-all duration-300 hover:shadow-md bg-background border-border hover:border-primary/20">
                       <div className="flex flex-wrap items-center gap-3 mb-2">
                         <span className="text-primary font-mono text-sm">{session.time}</span>
-                        {session.highlight && (
-                          <span className="px-2 py-0.5 text-xs font-medium bg-primary/15 text-primary rounded-full">
-                            핵심 세션
-                          </span>
-                        )}
                       </div>
-                      <h4 className="text-lg font-semibold text-foreground mb-1">{session.title}</h4>
+                      <h4 className="text-lg font-semibold text-foreground mb-1 break-keep">{session.title}</h4>
                       {session.description && (
-                        <p className="text-muted-foreground text-sm">{session.description}</p>
+                        <p className="text-muted-foreground text-sm break-keep">{session.description}</p>
                       )}
                     </div>
                   </div>

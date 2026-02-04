@@ -13,7 +13,6 @@ const Index = () => {
       <AgendaSection />
       <TargetSection />
       <CTASection />
-      <Footer />
     </main>
   );
 };

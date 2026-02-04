@@ -4,7 +4,7 @@ const targets = [
   {
     title: "기업 의사결정자",
     roles: ["CIO / CDO / CTO", "개발본부장", "디지털 전환 담당 임원"],
-    description: "AI 에이전트 도입의 비즈니스 임팩트를 직접 체험",
+    description: "AI 기반 개발 툴 도입의 비즈니스 임팩트를 직접 체험",
   },
   {
     title: "제품/서비스 책임자",
@@ -14,12 +14,12 @@ const targets = [
   {
     title: "기술 리더",
     roles: ["개발팀 리더", "아키텍트", "시니어 개발자"],
-    description: "Copilot + OpenCode 실습으로 즉시 활용 가능한 스킬 습득",
+    description: "GitHub Copilot SDK, CLI로 즉시 활용 가능한 스킬 습득",
   },
 ];
 
 const benefits = [
-  { icon: Target, title: "실전 프로토타입", description: "이틀 만에 동작하는 AI 에이전트 데모 완성" },
+  { icon: Target, title: "실전 프로토타입", description: "이틀 만에 동작하는 AI SaaS 데모 완성" },
   { icon: Sparkles, title: "최신 기술 체험", description: "GitHub Copilot SDK, CLI 최신 기능 직접 사용" },
   { icon: Zap, title: "비즈니스 인사이트", description: "자사에 맞는 AI 도입 시나리오 구체화" },
 ];
@@ -34,12 +34,9 @@ const TargetSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">FOR YOU</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
             이런 분들을 위한 프로그램
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            5~8개사 × 회사당 2~3인, 총 15~25명 한정
-          </p>
         </div>
 
         {/* Target Audience Grid */}
@@ -59,7 +56,7 @@ const TargetSection = () => {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-muted-foreground border-t border-border pt-4">
+              <p className="text-sm text-muted-foreground border-t border-border pt-4 break-keep">
                 {target.description}
               </p>
             </div>
@@ -84,7 +81,7 @@ const TargetSection = () => {
                     <Icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h4>
-                  <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                  <p className="text-sm text-muted-foreground break-keep">{benefit.description}</p>
                 </div>
               );
             })}

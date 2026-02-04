@@ -17,14 +17,14 @@ const CTASection = () => {
               <span className="text-sm text-primary font-medium">참가 신청 접수 중</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 break-keep">
               AI 에이전트와 함께
               <br />
               <span className="text-gradient">우리 회사의 다음 제품</span>을 만들어보세요
             </h2>
 
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              2일간의 집중 워크숍을 통해 GitHub Copilot과 Azure AI Foundry를 
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
+              2일간의 집중 해커톤을 통해 GitHub Copilot과 Azure AI Foundry를 
               직접 체험하고, 동작하는 프로토타입까지 완성하세요.
             </p>
 
@@ -41,23 +41,11 @@ const CTASection = () => {
 
             {/* Event Details */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <span>📅 12월 29일 - 30일</span>
+              <span>📅 3월 27일 - 28일</span>
               <span>📍 서울 도심 세미나실</span>
-              <span>👥 15-25명 한정</span>
             </div>
           </div>
 
-          {/* Sponsors/Hosts */}
-          <div className="mt-16 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <p className="text-sm text-muted-foreground mb-6">주최 및 협력</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-              <div className="text-foreground font-bold text-xl">MEGAZONE</div>
-              <div className="w-px h-6 bg-border" />
-              <div className="text-foreground font-semibold">GitHub</div>
-              <div className="w-px h-6 bg-border" />
-              <div className="text-foreground font-semibold">모던웹연구소</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

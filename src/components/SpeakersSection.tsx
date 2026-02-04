@@ -35,10 +35,10 @@ const SpeakersSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">SPEAKERS</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
             연사 & 퍼실리테이터
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
             GitHub과 Microsoft의 전문가들이 함께합니다
           </p>
         </div>
@@ -66,7 +66,7 @@ const SpeakersSection = () => {
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-foreground mb-1">{speaker.name}</h3>
                   <p className="text-primary font-medium text-sm mb-4">{speaker.role}</p>
-                  <p className="text-muted-foreground text-sm mb-6">{speaker.description}</p>
+                  <p className="text-muted-foreground text-sm mb-6 break-keep">{speaker.description}</p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap justify-center gap-2 mb-6">

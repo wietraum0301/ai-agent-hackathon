@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Users, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -20,36 +20,32 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-fade-up">
           <Sparkles className="w-4 h-4 text-primary" />
           <span className="text-sm text-muted-foreground">Hosted by</span>
-          <span className="text-sm font-semibold text-foreground">MEGAZONE</span>
+          <span className="text-sm font-semibold text-foreground">MEGAZONE CLOUD</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 break-keep animate-fade-up" style={{ animationDelay: '0.1s' }}>
           <span className="text-foreground">비즈니스 리더를 위한</span>
           <br />
           <span className="text-gradient">바이브코딩 해커톤</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 break-keep animate-fade-up" style={{ animationDelay: '0.2s' }}>
           GitHub Copilot & Azure AI Foundry 기반
           <br className="hidden md:block" />
-          <span className="text-foreground font-medium">AI 에이전트 프로토타이핑 워크숍</span>
+          <span className="text-foreground font-medium">AI SaaS 프로토타이핑 워크숍</span>
         </p>
 
         {/* Event Info Cards */}
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <Calendar className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">12월 29일 - 30일</span>
+            <span className="text-foreground font-medium">3월 27일 - 28일</span>
           </div>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <MapPin className="w-5 h-5 text-primary" />
             <span className="text-foreground font-medium">서울 도심 세미나실</span>
-          </div>
-          <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
-            <Users className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">15-25명 한정</span>
           </div>
         </div>
 
@@ -58,16 +54,13 @@ const HeroSection = () => {
           <Button variant="hero" size="xl">
             지금 등록하기
           </Button>
-          <Button variant="heroOutline" size="xl">
+          <Button
+            variant="heroOutline"
+            size="xl"
+            onClick={() => document.getElementById('agenda')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             프로그램 자세히 보기
           </Button>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-primary rounded-full" />
-          </div>
         </div>
       </div>
     </section>
