@@ -1,4 +1,4 @@
-import { Github, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const speakers = [
   {
@@ -27,10 +27,9 @@ const speakers = [
 
 const SpeakersSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-muted/50">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
@@ -49,20 +48,17 @@ const SpeakersSection = () => {
           {speakers.map((speaker, index) => (
             <div
               key={speaker.name}
-              className="group relative p-8 rounded-2xl bg-gradient-card border border-border/50 hover:border-primary/30 transition-all duration-500 animate-fade-up"
+              className="group relative p-8 rounded-2xl bg-background border border-border hover:border-primary/40 hover:shadow-lg transition-all duration-500 animate-fade-up"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              {/* Glow Effect on Hover */}
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 glow-accent" />
-              
               <div className="relative z-10">
                 {/* Avatar */}
                 <div className="relative w-24 h-24 mx-auto mb-6">
-                  <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-50 blur-xl group-hover:opacity-80 transition-opacity" />
+                  <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-30 blur-xl group-hover:opacity-50 transition-opacity" />
                   <img
                     src={speaker.image}
                     alt={speaker.name}
-                    className="relative w-24 h-24 rounded-full object-cover border-2 border-primary/50"
+                    className="relative w-24 h-24 rounded-full object-cover border-3 border-primary/30 shadow-md"
                   />
                 </div>
 
@@ -77,7 +73,7 @@ const SpeakersSection = () => {
                     {speaker.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 text-xs font-medium bg-secondary rounded-full text-muted-foreground"
+                        className="px-3 py-1 text-xs font-medium bg-secondary/50 rounded-full text-muted-foreground"
                       >
                         {tag}
                       </span>
@@ -90,7 +86,7 @@ const SpeakersSection = () => {
                       href={speaker.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
+                      className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -98,7 +94,7 @@ const SpeakersSection = () => {
                       href={speaker.social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
+                      className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                     >
                       <Linkedin className="w-5 h-5" />
                     </a>
