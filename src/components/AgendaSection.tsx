@@ -39,9 +39,8 @@ const AgendaSection = () => {
   const currentDay = days.find((d) => d.id === activeDay)!;
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-background">
       {/* Background */}
-      <div className="absolute inset-0 bg-muted/30" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
       <div className="relative z-10 container mx-auto px-4">
@@ -65,8 +64,8 @@ const AgendaSection = () => {
               className={cn(
                 "px-6 py-3 rounded-xl font-medium transition-all duration-300",
                 activeDay === day.id
-                  ? "bg-gradient-primary text-primary-foreground glow-primary"
-                  : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+                  ? "bg-gradient-primary text-primary-foreground shadow-lg glow-primary"
+                  : "bg-muted text-muted-foreground hover:text-foreground hover:bg-secondary"
               )}
             >
               <span className="block text-sm">{day.label}</span>
@@ -84,7 +83,7 @@ const AgendaSection = () => {
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-transparent" />
 
             {/* Sessions */}
             <div className="space-y-6">
@@ -93,9 +92,7 @@ const AgendaSection = () => {
                 return (
                   <div
                     key={index}
-                    className={cn(
-                      "relative pl-20 animate-fade-up",
-                    )}
+                    className="relative pl-20 animate-fade-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Timeline Dot */}
@@ -103,8 +100,8 @@ const AgendaSection = () => {
                       className={cn(
                         "absolute left-4 w-8 h-8 rounded-lg flex items-center justify-center transition-all",
                         session.highlight
-                          ? "bg-gradient-primary glow-primary"
-                          : "bg-secondary border border-border"
+                          ? "bg-gradient-primary shadow-md glow-primary"
+                          : "bg-muted border border-border"
                       )}
                     >
                       <Icon className={cn("w-4 h-4", session.highlight ? "text-primary-foreground" : "text-muted-foreground")} />
@@ -113,16 +110,16 @@ const AgendaSection = () => {
                     {/* Content Card */}
                     <div
                       className={cn(
-                        "p-5 rounded-xl border transition-all duration-300 hover:border-primary/30",
+                        "p-5 rounded-xl border transition-all duration-300 hover:shadow-md",
                         session.highlight
-                          ? "bg-gradient-card border-primary/20"
-                          : "bg-card/50 border-border/50"
+                          ? "bg-accent/10 border-primary/30"
+                          : "bg-background border-border hover:border-primary/20"
                       )}
                     >
                       <div className="flex flex-wrap items-center gap-3 mb-2">
                         <span className="text-primary font-mono text-sm">{session.time}</span>
                         {session.highlight && (
-                          <span className="px-2 py-0.5 text-xs font-medium bg-primary/20 text-primary rounded-full">
+                          <span className="px-2 py-0.5 text-xs font-medium bg-primary/15 text-primary rounded-full">
                             핵심 세션
                           </span>
                         )}

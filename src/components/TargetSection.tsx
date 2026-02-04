@@ -26,10 +26,9 @@ const benefits = [
 
 const TargetSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-muted/50">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
@@ -48,7 +47,7 @@ const TargetSection = () => {
           {targets.map((target, index) => (
             <div
               key={target.title}
-              className="p-6 rounded-2xl bg-gradient-card border border-border/50 hover:border-primary/30 transition-all duration-300 animate-fade-up"
+              className="p-6 rounded-2xl bg-background border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <h3 className="text-xl font-bold text-foreground mb-4">{target.title}</h3>
@@ -60,7 +59,7 @@ const TargetSection = () => {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-muted-foreground border-t border-border/50 pt-4">
+              <p className="text-sm text-muted-foreground border-t border-border pt-4">
                 {target.description}
               </p>
             </div>
@@ -78,10 +77,10 @@ const TargetSection = () => {
               return (
                 <div
                   key={benefit.title}
-                  className="text-center p-6 rounded-xl glass animate-fade-up"
+                  className="text-center p-6 rounded-xl bg-background border border-border hover:shadow-lg transition-all animate-fade-up"
                   style={{ animationDelay: `${0.3 + index * 0.1}s` }}
                 >
-                  <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-primary flex items-center justify-center glow-primary">
+                  <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-primary flex items-center justify-center shadow-lg glow-primary">
                     <Icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h4>

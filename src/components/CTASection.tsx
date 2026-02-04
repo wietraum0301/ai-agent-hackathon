@@ -3,16 +3,15 @@ import { ArrowRight, Mail } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-background">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(175_80%_50%_/_0.15),_transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(201_78%_69%_/_0.1),_transparent_70%)]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Content */}
-          <div className="p-10 rounded-3xl glass border-primary/20 animate-fade-up">
+          <div className="p-10 rounded-3xl bg-muted/50 border border-primary/20 shadow-xl animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm text-primary font-medium">참가 신청 접수 중</span>
@@ -51,7 +50,7 @@ const CTASection = () => {
           {/* Sponsors/Hosts */}
           <div className="mt-16 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <p className="text-sm text-muted-foreground mb-6">주최 및 협력</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
               <div className="text-foreground font-bold text-xl">MEGAZONE</div>
               <div className="w-px h-6 bg-border" />
               <div className="text-foreground font-semibold">GitHub</div>
