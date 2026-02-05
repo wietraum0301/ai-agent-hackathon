@@ -11,9 +11,9 @@ const days = [
     sessions: [
       { time: "13:00 - 13:30", title: "등록 & 네트워킹", description: "참가사 소개, IT/디지털 과제 공유", icon: Users },
       { time: "13:30 - 14:00", title: "키노트 ① AI 에이전트 시대", description: "비즈니스 리더에게 필요한 관점, 글로벌 도입 사례", icon: Lightbulb },
-      { time: "14:00 - 14:40", title: "키노트 ② GitHub Copilot & Azure AI Foundry", description: "엔터프라이즈 개발 환경, 보안/거버넌스 개요", icon: Presentation },
+      { time: "14:00 - 14:40", title: "키노트 ② GitHub Copilot & Microsoft Foundry", description: "엔터프라이즈 개발 환경, 보안/거버넌스 개요", icon: Presentation },
       { time: "14:40 - 16:10", title: "라이브 시연 & 바이브코딩", description: "비즈니스 요구사항 → 기능 정의 → 코드/테스트/문서 생성", icon: Code, highlight: true },
-      { time: "16:20 - 18:00", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS 및 에이전트 Use Case 정의 및 프로토타입 범위 설정", icon: Rocket },
+      { time: "16:20 - 18:00", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS · AI Agent Use Case 정의 및 프로토타입 범위 설정", icon: Rocket },
     ],
   },
   {
@@ -22,11 +22,11 @@ const days = [
     title: "해커톤 & 데모데이",
     date: "3월 28일 (토)",
     sessions: [
-      { time: "09:00 - 09:20", title: "리캡 & Day 2 목표 공유", description: "전날 Use Case 재정리, 완성 수준 합의", icon: Users },
+      { time: "09:00 - 09:20", title: "리캡 & Day 2 목표 공유", description: "AI SaaS · AI Agent Use Case 재정리, 완성 수준 합의", icon: Users },
       { time: "09:20 - 10:20", title: "통합 기술 세션", description: "GitHub Copilot SDK, CLI + Microsoft Foundry 연계 전략", icon: Code, highlight: true },
-      { time: "10:20 - 12:30", title: "팀별 설계 고도화 & 코딩", description: "모델 확정, 구조 구체화, 1:1 멘토링", icon: Rocket },
+      { time: "10:20 - 12:30", title: "팀별 설계 고도화 & 코딩", description: "AI Agent 아키텍처 확정, 구조 구체화, 1:1 멘토링", icon: Rocket },
       { time: "12:30 - 13:30", title: "점심", description: "", icon: Coffee },
-      { time: "13:30 - 15:30", title: "해커톤 집중 코딩", description: "프로토타입 완성, 자유 Q&A 및 미니 클리닉", icon: Code, highlight: true },
+      { time: "13:30 - 15:30", title: "해커톤 집중 코딩", description: "AI SaaS · AI Agent 프로토타입 완성, 자유 Q&A 및 미니 클리닉", icon: Code, highlight: true },
       { time: "15:30 - 16:30", title: "데모데이 & 피드백", description: "팀별 8분 발표, 비즈니스 임팩트 심사", icon: Presentation },
       { time: "16:30 - 17:00", title: "마무리 & 후속 안내", description: "도입 구조/라이선스 옵션, 후속 미팅 제안", icon: Lightbulb },
     ],
