@@ -24,8 +24,8 @@ const CTASection = () => {
             </h2>
 
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
-              2일간의 집중 해커톤을 통해 GitHub Copilot과 Azure AI Foundry를 
-              직접 체험하고, 동작하는 프로토타입까지 완성하세요.
+              2일간의 집중 해커톤을 통해 GitHub Copilot과 Microsoft Foundry를 
+              직접 체험하고, AI SaaS 또는 AI Agent 프로토타입을 완성하세요.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

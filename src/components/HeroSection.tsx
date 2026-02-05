@@ -34,7 +34,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 break-keep animate-fade-up" style={{ animationDelay: '0.2s' }}>
           GitHub Copilot & Microsoft Foundry 기반
           <br className="hidden md:block" />
-          <span className="text-foreground font-medium">AI SaaS 프로토타이핑 워크숍</span>
+          <span className="text-foreground font-medium">AI SaaS · AI Agent 프로토타이핑 워크숍</span>
         </p>
 
         {/* Event Info Cards */}
