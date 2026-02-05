@@ -4,14 +4,14 @@ import boraLeeImage from "@/assets/speaker-bora-lee.jpg";
 const speakers = [
   {
     name: "유저스틴",
-    role: "GitHub DevRel",
+    role: "수석 디벨로퍼 아드보캇, Microsoft",
     description: "GitHub Copilot SDK, CLI 최신 기능 소개 및 키노트 발표",
-    tags: ["GitHub Copilot", "DevRel", "AI Developer Tools"],
+    tags: ["마이크로소프트", "GitHub Copilot", "DevRel", "AI Developer Tools"],
     image: "https://avatars.githubusercontent.com/u/1538528?v=4",
     social: {
       github: "https://github.com/justinyoo",
       linkedin: "https://linkedin.com/in/justinyoo",
-    }
+    },
   },
   {
     name: "이보라",
@@ -22,7 +22,7 @@ const speakers = [
     social: {
       github: "https://github.com",
       linkedin: "https://linkedin.com",
-    }
+    },
   },
 ];
 
@@ -31,14 +31,12 @@ const SpeakersSection = () => {
     <section className="py-24 relative overflow-hidden bg-muted/50">
       {/* Background */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      
+
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">SPEAKERS</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
-            연사 & 퍼실리테이터
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">연사 & 퍼실리테이터</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
             GitHub과 Microsoft의 전문가들이 함께합니다
           </p>
