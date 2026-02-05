@@ -3,7 +3,7 @@ import boraLeeImage from "@/assets/speaker-bora-lee.jpg";
 
 const speakers = [
   {
-    name: "Justin Yoo (저스틴유)",
+    name: "유저스틴",
     role: "GitHub DevRel",
     description: "GitHub Copilot SDK, CLI 최신 기능 소개 및 키노트 발표",
     tags: ["GitHub Copilot", "DevRel", "AI Developer Tools"],
