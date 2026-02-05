@@ -15,13 +15,13 @@ const speakers = [
   },
   {
     name: "이보라",
-    role: "Microsoft MVP · 퍼실리테이터",
-    description: "전체 워크숍 퍼실리테이션, OpenCode + Azure AI Foundry 실습 리드",
+    role: "Microsoft MVP, 모던웹연구소",
+    description: "워크숍 퍼실리테이션, GitHub Copilot 실습 리드",
     tags: ["Microsoft MVP", "모던웹연구소", "AI Workshop"],
     image: boraLeeImage,
     social: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "https://github.com/Violet-Bora-Lee",
+      linkedin: "https://www.linkedin.com/in/learner-bora/",
     },
   },
 ];
