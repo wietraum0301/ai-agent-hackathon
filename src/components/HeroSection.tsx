@@ -51,8 +51,10 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-          <Button variant="hero" size="xl">
-            지금 등록하기
+          <Button variant="hero" size="xl" asChild>
+            <a href="https://events.teams.microsoft.com/event/b1532464-68b5-4997-825d-bc3430d621a3@97f42f55-f1db-4804-b1eb-08db083efd4f" target="_blank" rel="noopener noreferrer">
+              지금 등록하기
+            </a>
           </Button>
           <Button
             variant="heroOutline"
