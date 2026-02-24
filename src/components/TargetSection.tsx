@@ -25,9 +25,17 @@ const targets = [
 
 const benefits = [
   { icon: Target, title: "실전 프로토타입", description: "이틀 만에 동작하는 AI SaaS · AI Agent 데모 완성" },
-  { icon: Sparkles, title: "최신 기술 체험", description: "GitHub Copilot, Spark, Microsoft AI Foundry 최신 기능 직접 사용" },
+  {
+    icon: Sparkles,
+    title: "최신 기술 체험",
+    description: "GitHub Copilot, Spark, Microsoft AI Foundry 최신 기능 직접 사용",
+  },
   { icon: Zap, title: "비즈니스 인사이트", description: "자사에 맞는 AI 도입 시나리오 구체화" },
-  { icon: Award, title: "우승 시 특별 혜택", description: "500만원 AI 구축 지원 + AirPods Pro 3 + Microsoft Marketplace 게시 특전" },
+  {
+    icon: Award,
+    title: "우승 시 특별 혜택",
+    description: "AI 솔루션 구축 지원(500만원 상당) + AirPods Pro 3 + Microsoft Marketplace 게시 특전",
+  },
 ];
 
 const TargetSection = () => {
@@ -35,14 +43,12 @@ const TargetSection = () => {
     <section className="py-24 relative overflow-hidden bg-muted/50">
       {/* Background */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      
+
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">FOR YOU</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
-            🎯 이런 분들을 초대합니다
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">🎯 이런 분들을 초대합니다</h2>
         </div>
 
         {/* Target Audience Grid */}
@@ -71,9 +77,7 @@ const TargetSection = () => {
 
         {/* Benefits */}
         <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-10">
-            🎁 참가 혜택
-          </h3>
+          <h3 className="text-2xl font-bold text-center text-foreground mb-10">🎁 참가 혜택</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
