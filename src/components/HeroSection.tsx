@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Sparkles, Rocket, Trophy } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -24,18 +24,26 @@ const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 break-keep animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          <span className="text-foreground">비즈니스 리더를 위한</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 break-keep animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <span className="text-foreground">단 2일,</span>
           <br />
-          <span className="text-gradient">바이브코딩 해커톤</span>
+          <span className="text-foreground">당신의 아이디어가</span>
+          <br />
+          <span className="text-gradient">AI 제품이 됩니다</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 break-keep animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          GitHub Copilot & Microsoft Foundry 기반
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 break-keep animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          GitHub Copilot · Spark · Microsoft AI Foundry로 무장한 최첨단 환경에서
           <br className="hidden md:block" />
-          <span className="text-foreground font-medium">AI SaaS · AI Agent 프로토타이핑 워크숍</span>
+          <span className="text-foreground font-medium">비즈니스 아이디어를 48시간 만에 작동하는 프로토타입으로</span>
         </p>
+
+        {/* Prize Highlight */}
+        <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl glass border-primary/30 mb-8 animate-fade-up" style={{ animationDelay: '0.25s' }}>
+          <Trophy className="w-5 h-5 text-primary" />
+          <span className="text-foreground font-semibold">🏆 우승 혜택: AI 구축 인건비 500만원 + AirPods Pro 3</span>
+        </div>
 
         {/* Event Info Cards */}
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: '0.3s' }}>
@@ -45,7 +53,7 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <MapPin className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">서울 도심 세미나실</span>
+            <span className="text-foreground font-medium">양재 엘타워</span>
           </div>
         </div>
 
@@ -53,6 +61,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
           <Button variant="hero" size="xl" asChild>
             <a href="https://events.teams.microsoft.com/event/b1532464-68b5-4997-825d-bc3430d621a3@97f42f55-f1db-4804-b1eb-08db083efd4f" target="_blank" rel="noopener noreferrer">
+              <Rocket className="w-5 h-5" />
               지금 등록하기
             </a>
           </Button>

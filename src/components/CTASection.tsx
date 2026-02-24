@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, Rocket } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -18,19 +18,21 @@ const CTASection = () => {
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 break-keep">
-              AI 에이전트와 함께
+              "언젠가 해봐야지"가 아닌,
               <br />
-              <span className="text-gradient">우리 회사의 다음 제품</span>을 만들어보세요
+              <span className="text-gradient">"지금 바로" 시작하세요</span>
             </h2>
 
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
-              2일간의 집중 해커톤을 통해 GitHub Copilot과 Microsoft Foundry를 
-              직접 체험하고, AI SaaS 또는 AI Agent 프로토타입을 완성하세요.
+              2일간의 집중 해커톤에서 GitHub Copilot, Spark, 그리고 Microsoft AI Foundry를 
+              직접 체험하고, 여러분만의 AI SaaS 또는 AI Agent 프로토타입을 완성하세요. 
+              메가존클라우드가 지원합니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button variant="hero" size="xl" className="group" asChild>
                 <a href="https://events.teams.microsoft.com/event/b1532464-68b5-4997-825d-bc3430d621a3@97f42f55-f1db-4804-b1eb-08db083efd4f" target="_blank" rel="noopener noreferrer">
+                  <Rocket className="w-5 h-5" />
                   지금 등록하기
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -46,7 +48,8 @@ const CTASection = () => {
             {/* Event Details */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
               <span>📅 3월 27일 - 28일</span>
-              <span>📍 서울 도심 세미나실</span>
+              <span>📍 양재 엘타워</span>
+              <span>🏆 우승 혜택: 500만원 + AirPods Pro 3</span>
             </div>
           </div>
 
