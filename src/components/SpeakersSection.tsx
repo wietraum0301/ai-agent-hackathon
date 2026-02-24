@@ -40,6 +40,10 @@ const SpeakersSection = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
             GitHub과 Microsoft의 전문가들이 함께합니다
           </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mt-4">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-sm text-primary font-medium">연사 추가 확정 중 · Coming Soon</span>
+          </div>
         </div>
 
         {/* Speakers Grid */}
