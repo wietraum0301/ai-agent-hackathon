@@ -29,9 +29,7 @@ const TechStackSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">TECH STACK</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">
-            🛠️ 핵심 기술 스택
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">🛠️ 핵심 기술 스택</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
             세 가지 강력한 도구의 조합으로, 아이디어만 있으면 누구나 AI 제품을 만들 수 있습니다
           </p>
@@ -60,7 +58,6 @@ const TechStackSection = () => {
         {/* Bonus Stack */}
         <div className="max-w-3xl mx-auto p-8 rounded-2xl bg-muted/30 border border-primary/20 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Star className="w-5 h-5 text-primary" />
             <h3 className="text-lg font-bold text-foreground">⭐ 가산점 기술 스택</h3>
           </div>
           <p className="text-muted-foreground text-sm mb-4 break-keep">
