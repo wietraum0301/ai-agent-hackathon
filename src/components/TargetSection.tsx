@@ -28,7 +28,7 @@ const benefits = [
   {
     icon: Sparkles,
     title: "최신 기술 체험",
-    description: "GitHub Copilot, Spark, Microsoft AI Foundry 최신 기능 직접 사용",
+    description: "GitHub Copilot(SDK, CLI), Microsoft AI Foundry 최신 기능 직접 사용",
   },
   { icon: Zap, title: "비즈니스 인사이트", description: "자사에 맞는 AI 도입 시나리오 구체화" },
   {

@@ -7,8 +7,8 @@ const coreStack = [
     icon: Code2,
   },
   {
-    name: "Spark",
-    description: "빠르고 직관적인 프로토타입 개발 환경",
+    name: "GitHub Copilot SDK & CLI",
+    description: "SDK와 CLI로 AI 에이전트를 코드에 직접 통합, 자동화 워크플로우 구축",
     icon: Zap,
   },
   {
