@@ -43,7 +43,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 break-keep animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          GitHub Copilot · Spark · Microsoft AI Foundry로 무장한 최첨단 환경에서
+          GitHub Copilot(SDK · CLI) · Microsoft AI Foundry로 무장한 최첨단 환경에서
           <br className="hidden md:block" />
           <span className="text-foreground font-medium">비즈니스 아이디어를 48시간 만에 작동하는 프로토타입으로</span>
         </p>

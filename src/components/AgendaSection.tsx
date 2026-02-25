@@ -11,7 +11,7 @@ const days = [
     sessions: [
       { time: "09:00 - 09:30", title: "등록 & 네트워킹", description: "참가사 소개, IT/디지털 과제 공유", icon: Users },
       { time: "09:30 - 10:00", title: "키노트 ① AI 에이전트 시대", description: "비즈니스 리더를 위한 글로벌 도입 사례", icon: Lightbulb },
-      { time: "10:00 - 10:40", title: "키노트 ② GitHub Copilot, Spark & Microsoft AI Foundry", description: "엔터프라이즈 개발 환경의 새로운 기준", icon: Presentation },
+      { time: "10:00 - 10:40", title: "키노트 ② GitHub Copilot(SDK, CLI) & Microsoft AI Foundry", description: "엔터프라이즈 개발 환경의 새로운 기준", icon: Presentation },
       { time: "10:40 - 11:10", title: "라이브 시연 & 바이브코딩", description: "요구사항 → 기능 정의 → 코드/테스트/문서 자동 생성", icon: Code, highlight: true },
       { time: "11:10 - 11:40", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS · AI Agent Use Case 정의", icon: Rocket },
       { time: "11:40 - 13:00", title: "런치타임", description: "", icon: Coffee },

@@ -24,7 +24,7 @@ const CTASection = () => {
             </h2>
 
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
-              2일간의 집중 해커톤에서 GitHub Copilot, Spark, 그리고 Microsoft AI Foundry를 
+              2일간의 집중 해커톤에서 GitHub Copilot(SDK, CLI)과 Microsoft AI Foundry를 
               직접 체험하고, 여러분만의 AI SaaS 또는 AI Agent 프로토타입을 완성하세요. 
               메가존클라우드가 지원합니다.
             </p>
