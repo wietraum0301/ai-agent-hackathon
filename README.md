@@ -62,7 +62,23 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### GitHub Pages Deployment
+
+This project is configured to deploy automatically to GitHub Pages. After merging changes to the `main` branch:
+
+1. Go to your repository Settings → Pages
+2. Under "Source", select "GitHub Actions"
+3. The deployment will happen automatically on every push to `main`
+4. Your site will be available at: `https://wietraum0301.github.io/ai-agent-hackathon/`
+
+The GitHub Actions workflow (`.github/workflows/deploy-gh-pages.yml`) will:
+- Build the project using Vite
+- Deploy the built files to GitHub Pages
+- Make the site available at the URL above
+
+### Alternative: Lovable Deployment
+
+You can also deploy via [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) by clicking on Share → Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
