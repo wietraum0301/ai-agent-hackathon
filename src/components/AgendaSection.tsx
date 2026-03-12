@@ -29,7 +29,7 @@ const AgendaSection = () => {
             📅 하루 집중 여정
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
-            3월 27일 (금) · 09:00 - 18:00 · 양재 엘타워
+            3월 27일 (금) · 09:00 - 20:00 · 양재 엘타워
           </p>
         </div>
 
