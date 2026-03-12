@@ -20,7 +20,7 @@ const CTASection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 break-keep">
               "언젠가 해봐야지"가 아닌,
               <br />
-              <span className="text-gradient">"지금 바로" 시작하세요</span>
+              <span className="text-gradient">'지금 바로' 시작하세요</span>
             </h2>
 
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
@@ -55,8 +55,8 @@ const CTASection = () => {
 
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTASection;
