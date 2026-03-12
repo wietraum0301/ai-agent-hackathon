@@ -6,14 +6,14 @@ const sessions = [
   { time: "09:30 - 10:00", title: "키노트 ① AI 에이전트 시대", description: "비즈니스 리더를 위한 글로벌 도입 사례", icon: Lightbulb },
   { time: "10:00 - 10:40", title: "키노트 ② GitHub Copilot(SDK, CLI) & Microsoft Foundry", description: "엔터프라이즈 개발 환경의 새로운 기준", icon: Presentation },
   { time: "10:40 - 11:10", title: "라이브 시연 & 바이브코딩", description: "요구사항 → 기능 정의 → 코드/테스트/문서 자동 생성", icon: Code, highlight: true },
-  { time: "11:10 - 11:40", title: "Microsoft Foundry IQ와 에이전틱 검색", description: "김유신 · 테크레벨 200 / 30분", icon: Bot },
-  { time: "11:40 - 12:10", title: "Foundry Agent와 MCP 서버의 만남", description: "남정현 · 우리 회사 레거시 시스템도 AI에 통합할 수 있을까? 테크레벨 200 / 30분", icon: Bot },
-  { time: "12:10 - 12:40", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS · AI Agent Use Case 정의", icon: Rocket },
-  { time: "12:40 - 13:30", title: "런치타임", description: "", icon: Coffee },
-  { time: "13:30 - 15:30", title: "프로토타입 개발 + 튜토링", description: "팀별 집중 개발 및 1:1 멘토링 지원", icon: Code, highlight: true },
-  { time: "15:30 - 16:30", title: "각 조 10분 발표 및 심사", description: "팀별 프로토타입 데모 및 비즈니스 임팩트 심사", icon: Presentation },
-  { time: "16:30 - 16:45", title: "선정작 발표", description: "우승팀 발표 및 시상", icon: Lightbulb },
-  { time: "16:45 - 18:00", title: "네트워킹 & 클로징", description: "참가자 간 교류 및 후속 논의", icon: Users },
+  { time: "11:10 - 11:40", title: "비즈니스 아이데이션 워크숍", description: "팀별 AI SaaS · AI Agent Use Case 정의", icon: Rocket },
+  { time: "11:40 - 13:00", title: "런치타임", description: "", icon: Coffee },
+  { time: "13:00 - 14:00", title: "프로토타입 개발 시작 + 튜토링", description: "팀별 집중 개발 및 1:1 멘토링 지원", icon: Code, highlight: true },
+  { time: "15:00 - 15:30", title: "Microsoft Foundry IQ와 에이전틱 검색", description: "김유신 · 테크레벨 200 / 30분", icon: Bot },
+  { time: "15:30 - 16:00", title: "우리 회사 레거시 시스템도 AI에 통합할 수 있을까? Foundry Agent와 MCP 서버의 만남", description: "남정현 · 테크레벨 200 / 30분", icon: Bot },
+  { time: "16:00 - 17:30", title: "프로토타입 개발 + 튜토링", description: "팀별 집중 개발 및 1:1 멘토링 지원", icon: Code, highlight: true },
+  { time: "17:30 - 18:00", title: "에이전트별 페차쿠차 발표 + 오픈 평가와 시상", description: "팀별 프로토타입 데모 및 평가", icon: Presentation },
+  { time: "18:00 - 20:00", title: "저녁식사와 네트워킹", description: "편안한 분위기에서의 네트워킹 타임", icon: Coffee },
 ];
 
 const AgendaSection = () => {
@@ -29,7 +29,7 @@ const AgendaSection = () => {
             📅 하루 집중 여정
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
-            3월 27일 (금) · 09:00 - 18:00 · 양재 엘타워
+            3월 27일 (금) · 09:00 - 20:00 · 양재 엘타워
           </p>
         </div>
 
