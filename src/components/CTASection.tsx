@@ -47,7 +47,7 @@ const CTASection = () => {
 
             {/* Event Details */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <span>📅 3월 27일 - 28일</span>
+              <span>📅 3월 27일 (금)</span>
               <span>📍 양재 엘타워</span>
               <span>🏆 우승 혜택: 500만원 + AirPods Pro 3</span>
             </div>

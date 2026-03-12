@@ -24,16 +24,35 @@ const speakers = [
       linkedin: "https://www.linkedin.com/in/learner-bora/",
     },
   },
+  {
+    name: "김유신",
+    role: "메가존클라우드, Microsoft MVP / Microsoft Foundry",
+    description: "Microsoft Foundry IQ와 에이전틱 검색 (테크레벨 200 / 30분)",
+    tags: ["Microsoft Foundry", "Foundry IQ", "Agentic Search", "AI Strategy"],
+    image: "https://dotnetuniverse.net/images/speakers/kim_yushin.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/youshin-kim-9a29a2358/",
+    },
+  },
+  {
+    name: "남정현",
+    role: "닷넷데브 운영진, Microsoft MVP / Developer & Technologies",
+    description: "우리 회사 레거시 시스템도 AI에 통합할 수 있을까? Foundry Agent와 MCP 서버의 만남 (테크레벨 200 / 30분)",
+    tags: ["Foundry Agent", "MCP Server", "Legacy Modernization", "Microsoft MVP"],
+    image: "https://dotnetuniverse.net/images/speakers/nam_junghyun.png",
+    social: {
+      github: "https://github.com/rkttu",
+      linkedin: "https://www.linkedin.com/in/rkttu/",
+    },
+  },
 ];
 
 const SpeakersSection = () => {
   return (
     <section className="py-24 relative overflow-hidden bg-muted/50">
-      {/* Background */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
       <div className="relative z-10 container mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">SPEAKERS</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">연사 & 퍼실리테이터</h2>
@@ -46,8 +65,7 @@ const SpeakersSection = () => {
           </div>
         </div>
 
-        {/* Speakers Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {speakers.map((speaker, index) => (
             <div
               key={speaker.name}
@@ -55,7 +73,6 @@ const SpeakersSection = () => {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="relative z-10">
-                {/* Avatar */}
                 <div className="relative w-24 h-24 mx-auto mb-6">
                   <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-30 blur-xl group-hover:opacity-50 transition-opacity" />
                   <img
@@ -65,13 +82,11 @@ const SpeakersSection = () => {
                   />
                 </div>
 
-                {/* Info */}
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-foreground mb-1">{speaker.name}</h3>
                   <p className="text-primary font-medium text-sm mb-4">{speaker.role}</p>
                   <p className="text-muted-foreground text-sm mb-6 break-keep">{speaker.description}</p>
 
-                  {/* Tags */}
                   <div className="flex flex-wrap justify-center gap-2 mb-6">
                     {speaker.tags.map((tag) => (
                       <span
@@ -83,24 +98,27 @@ const SpeakersSection = () => {
                     ))}
                   </div>
 
-                  {/* Social Links */}
                   <div className="flex justify-center gap-3">
-                    <a
-                      href={speaker.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
-                    <a
-                      href={speaker.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
+                    {speaker.social.github && (
+                      <a
+                        href={speaker.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
+                    {speaker.social.linkedin && (
+                      <a
+                        href={speaker.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
