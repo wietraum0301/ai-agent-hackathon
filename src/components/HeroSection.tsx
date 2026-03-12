@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 break-keep animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          <span className="text-foreground">단 2일,</span>
+          <span className="text-foreground">단 1일,</span>
           <br />
           <span className="text-foreground">당신의 아이디어가</span>
           <br />
@@ -43,9 +43,9 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 break-keep animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          GitHub Copilot(SDK · CLI) · Microsoft AI Foundry로 무장한 최첨단 환경에서
+          GitHub Copilot(SDK · CLI) · Microsoft Foundry로 무장한 최첨단 환경에서
           <br className="hidden md:block" />
-          <span className="text-foreground font-medium">비즈니스 아이디어를 48시간 만에 작동하는 프로토타입으로</span>
+          <span className="text-foreground font-medium">비즈니스 아이디어를 9시간 만에 작동하는 프로토타입으로</span>
         </p>
 
         {/* Prize Highlight */}
@@ -60,7 +60,7 @@ const HeroSection = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <Calendar className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">3월 27일 - 28일</span>
+            <span className="text-foreground font-medium">3월 27일 (금)</span>
           </div>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <MapPin className="w-5 h-5 text-primary" />

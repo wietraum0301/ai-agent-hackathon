@@ -24,11 +24,11 @@ const targets = [
 ];
 
 const benefits = [
-  { icon: Target, title: "실전 프로토타입", description: "이틀 만에 동작하는 AI SaaS · AI Agent 데모 완성" },
+  { icon: Target, title: "실전 프로토타입", description: "하루 만에 동작하는 AI SaaS · AI Agent 데모 완성" },
   {
     icon: Sparkles,
     title: "최신 기술 체험",
-    description: "GitHub Copilot(SDK, CLI), Microsoft AI Foundry 최신 기능 직접 사용",
+    description: "GitHub Copilot(SDK, CLI), Microsoft Foundry 최신 기능 직접 사용",
   },
   { icon: Zap, title: "비즈니스 인사이트", description: "자사에 맞는 AI 도입 시나리오 구체화" },
   {

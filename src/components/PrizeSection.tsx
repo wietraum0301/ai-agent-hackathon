@@ -11,7 +11,7 @@ const PrizeSection = () => {
           <p className="text-primary font-mono text-sm tracking-wider mb-4">PRIZES</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 break-keep">🏆 압도적인 우승 혜택</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto break-keep">
-            48시간의 도전이 500만원의 가치와 프리미엄 선물로 돌아옵니다!
+            하루의 도전이 500만원의 가치와 프리미엄 선물로 돌아옵니다!
           </p>
         </div>
 
