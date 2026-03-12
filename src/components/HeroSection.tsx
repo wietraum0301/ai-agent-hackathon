@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 break-keep animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          <span className="text-foreground">단 2일,</span>
+          <span className="text-foreground">단 1일,</span>
           <br />
           <span className="text-foreground">당신의 아이디어가</span>
           <br />
