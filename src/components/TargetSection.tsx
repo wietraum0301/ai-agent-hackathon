@@ -24,7 +24,7 @@ const targets = [
 ];
 
 const benefits = [
-  { icon: Target, title: "실전 프로토타입", description: "이틀 만에 동작하는 AI SaaS · AI Agent 데모 완성" },
+  { icon: Target, title: "실전 프로토타입", description: "하루 만에 동작하는 AI SaaS · AI Agent 데모 완성" },
   {
     icon: Sparkles,
     title: "최신 기술 체험",
