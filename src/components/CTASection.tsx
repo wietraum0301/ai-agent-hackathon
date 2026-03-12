@@ -23,9 +23,11 @@ const CTASection = () => {
               <span className="text-gradient">'지금 바로' 시작하세요</span>
             </h2>
 
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
+            <p className="text-muted-foreground max-w-xl mx-auto break-keep">
               하루 집중 해커톤에서 GitHub Copilot(SDK, CLI)과 Microsoft Foundry를 
-              직접 체험하고, 여러분만의 AI SaaS 또는 AI Agent 프로토타입을 완성하세요. 
+              직접 체험하고, 여러분만의 AI SaaS 또는 AI Agent 프로토타입을 완성하세요.
+            </p>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto break-keep">
               메가존클라우드가 지원합니다.
             </p>
 
