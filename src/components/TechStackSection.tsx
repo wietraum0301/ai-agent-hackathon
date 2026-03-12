@@ -12,7 +12,7 @@ const coreStack = [
     icon: Zap,
   },
   {
-    name: "Microsoft AI Foundry",
+    name: "Microsoft Foundry",
     description: "엔터프라이즈급 AI 모델 배포 및 거버넌스",
     icon: Shield,
   },

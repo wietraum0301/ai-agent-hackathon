@@ -60,7 +60,7 @@ const HeroSection = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <Calendar className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">3월 27일 - 28일</span>
+            <span className="text-foreground font-medium">3월 27일 (금)</span>
           </div>
           <div className="flex items-center gap-2 px-5 py-3 rounded-xl glass">
             <MapPin className="w-5 h-5 text-primary" />
